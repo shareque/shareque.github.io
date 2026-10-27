@@ -2,27 +2,118 @@
   "profile": {
     "firstName": "Mirza",
     "lastName": "Shareque",
-    "tagline": "Software engineer & creative developer crafting <primary>fast, elegant</primary> digital experiences.",
-    "available": "Available for work",
-    "email": "hello@example.com",
-    "resume": "/downloads/resume.pdf"
+    "fullName": "Mirza Sharequllah Baig",
+    "title": "Technical Architect (.NET) | Application Development | Team Management",
+    "tagline": "Technical Architect & .NET Lead crafting <primary>high-concurrency microservices, distributed systems</primary> & AI-augmented enterprise solutions.",
+    "about": "Technical Architect, Senior Full Stack Engineer Lead & AI-Augmented Engineer with over 12+ years of experience building and scaling enterprise web applications and distributed microservices from scratch.",
+    "location": "Aurangabad, Maharashtra, India",
+    "phone": "+91 9762108611",
+    "available": "Available for Architecture & Consulting",
+    "email": "shareque@outlook.com",
+    "resume": "/downloads/mirza-shareque-cv-dotnet-architect.pdf"
   },
   "skills": [
-    { "t": "Frontend Engineering", "d": "Pixel-perfect, accessible interfaces with buttery motion.", "n": "01" },
-    { "t": "Backend & APIs", "d": "Scalable services, clean data models and secure APIs.", "n": "02" },
-    { "t": "UI / UX Design", "d": "From wireframe to polished design systems.", "n": "03" },
-    { "t": "Cloud & DevOps", "d": "CI/CD, containers and reliable deployments.", "n": "04" }
+    {
+      "n": "01",
+      "t": "Enterprise Architecture",
+      "d": "Distributed microservices, Saga pattern (Orchestration & Choreography), SOLID principles, and high-concurrency event-driven systems."
+    },
+    {
+      "n": "02",
+      "t": ".NET & Full Stack",
+      "d": "Modern .NET (5–9), C#, ASP.NET Core Web API, Blazor Server, Angular (7–10), and React.js with clean UI design systems."
+    },
+    {
+      "n": "03",
+      "t": "Data & Messaging",
+      "d": "High-throughput messaging with Kafka & RabbitMQ, in-memory caching with Redis, SQL Server, Oracle Cloud, and Dapper/EF Core ORMs."
+    },
+    {
+      "n": "04",
+      "t": "DevOps & AI Workflows",
+      "d": "CI/CD automation, GitHub Actions, Docker, Argo CD, SSO (Keycloak), and AI-augmented engineering with Claude Code, Copilot & Antigravity."
+    }
   ],
-  "tech": ["React", "TypeScript", "Next.js", "Node.js", "Tailwind", "PostgreSQL", "MongoDB", "Docker", "AWS", "Python", "GraphQL", "Figma", "Git", "Redis"],
+  "tech": [
+    ".NET 9",
+    "C#",
+    "Microservices",
+    "ASP.NET Core",
+    "SQL Server",
+    "Kafka",
+    "RabbitMQ",
+    "Redis",
+    "Angular",
+    "React.js",
+    "Blazor Server",
+    "Docker",
+    "Dapper ORM",
+    "EF Core",
+    "Oracle Cloud",
+    "Saga Pattern",
+    "GitHub Actions",
+    "CI/CD Automation",
+    "Keycloak SSO",
+    "TypeScript"
+  ],
   "experience": [
-    { "y": "2024 — Now", "r": "Senior Software Engineer", "c": "Company Name", "d": "Leading frontend architecture and shipping features used by thousands daily." },
-    { "y": "2022 — 2024", "r": "Full Stack Developer", "c": "Company Name", "d": "Built end-to-end products, APIs and internal tools across the stack." },
-    { "y": "2021 — 2022", "r": "Frontend Developer", "c": "Company Name", "d": "Crafted responsive UIs and a reusable component library." }
+    {
+      "y": "Jan 2024 — Jun 2026",
+      "r": "Senior Full Stack Developer / Technical Lead",
+      "c": "Applligent Technologies (Client: Al Sahab National, Riyadh, KSA)",
+      "d": "Led end-to-end delivery of enterprise solutions for Saudi government entities (SRCA, Ministry of Commerce, MoH) and flagship platforms WAREED & TAQFI. Architected IoT smart traffic signal system with real-time emergency ambulance tracking to trigger automated green corridors. Engineered high-concurrency .NET Core microservices with RabbitMQ, Redis, and multi-database backends."
+    },
+    {
+      "y": "Nov 2022 — Dec 2023",
+      "r": "Senior Full Stack Developer / Technical Lead",
+      "c": "EduSuite Solutions (Client: Al Sahab National, Riyadh, KSA)",
+      "d": "Engineered high-concurrency microservices in .NET Core utilizing RabbitMQ, Redis, Saga pattern, and multi-database architectures (SQL Server, Oracle Cloud). Managed multi-environment zero-downtime releases and led Agile/Scrum sprint planning and QA coordination."
+    },
+    {
+      "y": "Dec 2022 — Mar 2025",
+      "r": ".NET Consultant (C2H)",
+      "c": "EffiaSoft (Client: MariApps Marine Solutions)",
+      "d": "Directed backend architecture and delivery for cruise-industry enterprise products including SeaRoster, JB Cruise, and Plexus Blazor app using .NET Web APIs, React.js, Blazor, and Dapper ORM. Mentored and guided engineers in enterprise design patterns."
+    },
+    {
+      "y": "Mar 2021 — Dec 2022",
+      "r": "Technical Architect",
+      "c": "Redbytes Software (Clients: Infionic Inc & EffiaSoft)",
+      "d": "Led migration of enterprise applications from legacy .NET Framework 4.8 to .NET 5, redesigning core modules with Web API, React.js, and SQL Server 2019. Authored comprehensive target-state architecture diagrams, database designs, API specifications, and established DevOps continuous delivery standards."
+    },
+    {
+      "y": "Feb 2017 — Feb 2021",
+      "r": "Project Development Manager",
+      "c": "Dreams Creation Advertising",
+      "d": "Owned full SDLC execution and system architecture across 18+ internal ERP modules (HR, Outdoor, Accounts, Marketing). Optimized SQL query execution, directed production support, and implemented enterprise SSRS/RDLC reporting."
+    },
+    {
+      "y": "Mar 2012 — Jan 2017",
+      "r": "Senior Web Application Developer",
+      "c": "ITBees Technologies",
+      "d": "Delivered full-cycle web and mobile solutions across manufacturing, slot dispatch systems, e-commerce, and enterprise clients. Built reusable framework components adopted as company-wide engineering standards."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science (Computer Science)",
+      "year": "2018",
+      "institution": "Dr. Babasaheb Ambedkar Marathwada University, Aurangabad"
+    },
+    {
+      "degree": "Bachelor of Science (Computer Science)",
+      "year": "2016",
+      "institution": "Maulana Azad College, Dr. Babasaheb Ambedkar Marathwada University"
+    },
+    {
+      "degree": "Diploma in Business Management",
+      "year": "2012",
+      "institution": "IHTM, Aurangabad, Maharashtra"
+    }
   ],
   "social": [
-    { "n": "GitHub", "h": "https://github.com/" },
-    { "n": "LinkedIn", "h": "https://linkedin.com/" },
-    { "n": "X / Twitter", "h": "https://x.com/" },
-    { "n": "Email", "h": "mailto:hello@example.com" }
+    { "n": "GitHub", "h": "https://github.com/shareque" },
+    { "n": "LinkedIn", "h": "https://linkedin.com/in/mirzashareque" },
+    { "n": "Email", "h": "mailto:shareque@outlook.com" }
   ]
 }

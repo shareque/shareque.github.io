@@ -11,16 +11,17 @@ const PROFILE = portfolioData.profile;
 const SKILLS = portfolioData.skills;
 const TECH = portfolioData.tech;
 const EXP = portfolioData.experience;
+const EDU = portfolioData.education;
 const SOCIAL = portfolioData.social;
 const PAGE_SIZE = 6;
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mirza Shareque — Software Engineer & Creative Developer" },
-      { name: "description", content: "Portfolio of Mirza Shareque: skills, tech stack, experience, projects and ways to connect." },
-      { property: "og:title", content: "Mirza Shareque — Portfolio" },
-      { property: "og:description", content: "Building fast, beautiful digital products. Explore my work." },
+      { title: "Mirza Shareque — Technical Architect (.NET) & Full Stack Lead" },
+      { name: "description", content: "Portfolio of Mirza Sharequllah Baig: Technical Architect (.NET), enterprise microservices, Saga pattern, Kafka, Redis, and cloud architectures." },
+      { property: "og:title", content: "Mirza Shareque — Technical Architect (.NET)" },
+      { property: "og:description", content: "12+ years building high-concurrency microservices, distributed systems, and AI-augmented enterprise solutions." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -48,8 +49,10 @@ function Index() {
   useReveal([page]);
   const [pos, setPos] = useState({ x: 50, y: 50 });
   const [active, setActive] = useState("about");
-  const pageCount = Math.ceil(PROJECTS.length / PAGE_SIZE);
-  const pageItems = PROJECTS.slice(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE);
+  const selectedProjects = PROJECTS.slice(0, 4);
+  const moreProjects = PROJECTS.slice(4);
+  const pageCount = Math.ceil(moreProjects.length / PAGE_SIZE);
+  const pageItems = moreProjects.slice(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE);
 
   const [showTop, setShowTop] = useState(false);
   useEffect(() => {
@@ -111,11 +114,15 @@ function Index() {
             <DevAvatar x={pos.x} y={pos.y} />
           </div>
 
-          <div className="reveal glass relative z-30 mt-10 max-w-sm -rotate-2 rounded-3xl p-6 md:ml-[8vw]">
-            <div className="mb-3 inline-flex items-center gap-2 font-mono text-xs text-muted-foreground">
-              <span className="h-2 w-2 animate-pulse rounded-full bg-primary" /> {PROFILE.available}
+          <div className="reveal glass relative z-30 mt-10 max-w-md -rotate-2 rounded-3xl p-6 md:ml-[8vw]">
+            <div className="mb-3 flex flex-wrap items-center gap-2 font-mono text-xs text-muted-foreground">
+              <span className="inline-flex items-center gap-1.5">
+                <span className="h-2 w-2 animate-pulse rounded-full bg-primary" /> {PROFILE.available}
+              </span>
+              <span>·</span>
+              <span>{PROFILE.location}</span>
             </div>
-            <p className="text-lg">{PROFILE.tagline.split(/<\/?primary>/)[0]}<span className="text-primary">{PROFILE.tagline.split(/<\/?primary>/)[1]}</span>{PROFILE.tagline.split(/<\/?primary>/)[2]}</p>
+            <p className="text-lg leading-relaxed">{PROFILE.tagline.split(/<\/?primary>/)[0]}<span className="text-primary font-medium">{PROFILE.tagline.split(/<\/?primary>/)[1]}</span>{PROFILE.tagline.split(/<\/?primary>/)[2]}</p>
           </div>
           <div className="reveal relative z-30 mt-6 flex rotate-1 flex-wrap gap-3 md:ml-[30vw]">
             <a href="#projects" className="glow rounded-full bg-primary px-7 py-3.5 font-medium text-primary-foreground transition-transform hover:scale-105">View work →</a>
@@ -165,17 +172,34 @@ function Index() {
           <h2 className="reveal mt-3 text-6xl font-semibold tracking-tighter md:text-8xl">Where I've <span className="font-serif italic text-signature">been.</span></h2>
           <div className="mt-20 space-y-10">
             {EXP.map((e, i) => (
-              <div key={e.y} className="reveal relative" style={{ marginLeft: `${i * 14}%` }}>
+              <div key={e.y} className="reveal relative" style={{ marginLeft: `${(i % 3) * 6}%` }}>
                 <span className="pointer-events-none absolute -left-4 -top-14 select-none font-serif text-[9rem] italic leading-none text-secondary">0{i + 1}</span>
-                <div className="glass relative max-w-xl rounded-3xl p-8 transition-transform hover:-translate-y-1">
+                <div className="glass relative max-w-2xl rounded-3xl p-8 transition-transform hover:-translate-y-1">
                   <p className="font-mono text-sm text-primary">{e.y}</p>
                   <h3 className="mt-2 text-3xl font-semibold">{e.r}</h3>
-                  <p className="text-accent">@ {e.c}</p>
-                  <p className="mt-3 text-muted-foreground">{e.d}</p>
+                  <p className="text-accent font-medium mt-1">@ {e.c}</p>
+                  <p className="mt-3 text-muted-foreground leading-relaxed">{e.d}</p>
                 </div>
               </div>
             ))}
           </div>
+
+          {/* EDUCATION OVERVIEW */}
+          {EDU && EDU.length > 0 && (
+            <div className="mt-28">
+              <p className="reveal font-mono text-xs uppercase tracking-[0.3em] text-primary">// academic foundation</p>
+              <h3 className="reveal mt-3 text-4xl font-semibold tracking-tight md:text-5xl">Education &amp; <span className="font-serif italic text-signature">Degrees.</span></h3>
+              <div className="mt-10 grid gap-6 sm:grid-cols-3">
+                {EDU.map((item) => (
+                  <div key={item.degree} className="reveal glass rounded-3xl p-6 transition-all hover:border-primary">
+                    <span className="font-mono text-xs text-primary">{item.year}</span>
+                    <h4 className="mt-2 text-xl font-semibold">{item.degree}</h4>
+                    <p className="mt-2 text-sm text-muted-foreground">{item.institution}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </section>
 
         {/* PROJECTS — overlapping collage */}
@@ -185,7 +209,7 @@ function Index() {
             <p className="reveal font-mono text-xs uppercase tracking-[0.3em] text-primary">// 04 projects</p>
           </div>
           <div className="mt-16 grid gap-6 md:grid-cols-12">
-            {PROJECTS.slice(0, 4).map((p, i) => (
+            {selectedProjects.map((p, i) => (
               <article
                 key={p.t}
                 className={`reveal group relative overflow-hidden rounded-3xl border bg-card p-7 transition-all duration-500 hover:z-20 hover:-translate-y-2 hover:border-primary ${["md:col-span-7", "md:col-span-5 md:-ml-16 md:mt-24 md:rotate-2", "md:col-span-5 md:col-start-2 md:-mt-12 md:-rotate-2", "md:col-span-6 md:-mt-4"][i]}`}
@@ -197,7 +221,7 @@ function Index() {
                 </div>
                 <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">{p.k}</p>
                 <h3 className="mt-2 text-2xl font-semibold">{p.t}</h3>
-                <p className="mt-2 text-muted-foreground">{p.d}</p>
+                <p className="mt-2 text-muted-foreground leading-relaxed">{p.d}</p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {p.s.map((s) => <span key={s} className="rounded-full border px-3 py-1 font-mono text-xs">{s}</span>)}
                 </div>
@@ -205,7 +229,7 @@ function Index() {
             ))}
           </div>
 
-          <p className="reveal mt-24 font-mono text-xs uppercase tracking-[0.3em] text-primary">// all work · {PROJECTS.length} total</p>
+          <p className="reveal mt-24 font-mono text-xs uppercase tracking-[0.3em] text-primary">// more work · {moreProjects.length} enterprise projects</p>
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {pageItems.map((p) => (
               <article key={p.t} className="reveal group relative rounded-2xl border bg-card p-6 transition-all duration-500 hover:-translate-y-1.5 hover:border-primary">
@@ -214,7 +238,7 @@ function Index() {
                   <span className="font-serif text-2xl italic text-secondary transition-colors group-hover:text-primary">{p.t.charAt(0)}</span>
                 </div>
                 <h3 className="mt-3 text-xl font-semibold">{p.t}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{p.d}</p>
+                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{p.d}</p>
                 <div className="mt-4 flex flex-wrap gap-1.5">
                   {p.s.map((s) => <span key={s} className="rounded-full border px-2.5 py-0.5 font-mono text-[11px]">{s}</span>)}
                 </div>
@@ -264,16 +288,21 @@ function Index() {
             </h2>
             <div className="mt-10 flex flex-wrap gap-4 md:ml-[30%]">
               <a href={`mailto:${PROFILE.email}`} className="reveal glow rotate-2 rounded-full bg-primary px-8 py-4 text-lg font-medium text-primary-foreground transition-transform hover:rotate-0 hover:scale-105">{PROFILE.email}</a>
+              {PROFILE.phone && (
+                <a href={`tel:${PROFILE.phone.replace(/\s+/g, '')}`} className="reveal glass -rotate-1 rounded-full px-6 py-4 transition-all hover:rotate-0 hover:border-primary hover:text-primary">
+                  {PROFILE.phone}
+                </a>
+              )}
               <a href={PROFILE.resume} download className="reveal glass rotate-1 rounded-full px-6 py-4 transition-all hover:rotate-0 hover:border-primary hover:text-primary">
                 Download résumé ↓
               </a>
-              {SOCIAL.slice(0, 3).map((s, i) => (
-                <a key={s.n} href={s.h} target="_blank" rel="noreferrer" className={`reveal glass rounded-full px-6 py-4 transition-all hover:rotate-0 hover:border-primary hover:text-primary ${["-rotate-3", "rotate-1", "-rotate-2"][i]}`}>
+              {SOCIAL.filter((s) => !s.h.startsWith("mailto:")).map((s, i) => (
+                <a key={s.n} href={s.h} target="_blank" rel="noreferrer" className={`reveal glass rounded-full px-6 py-4 transition-all hover:rotate-0 hover:border-primary hover:text-primary ${["-rotate-3", "rotate-1", "-rotate-2"][i % 3]}`}>
                   {s.n} ↗
                 </a>
               ))}
             </div>
-            <p className="mt-24 font-mono text-xs text-muted-foreground">© {new Date().getFullYear()} {PROFILE.firstName} {PROFILE.lastName} — Designed & built with care.</p>
+            <p className="mt-24 font-mono text-xs text-muted-foreground">© {new Date().getFullYear()} {PROFILE.fullName || `${PROFILE.firstName} ${PROFILE.lastName}`} — Technical Architect &amp; Engineering Lead.</p>
           </div>
         </section>
       </main>

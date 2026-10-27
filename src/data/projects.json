@@ -1,24 +1,122 @@
 [
-  { "t": "Nebula Dashboard", "k": "SaaS · Analytics", "d": "Real-time analytics platform with live charts and team workspaces.", "s": ["React", "Node", "Postgres"] },
-  { "t": "Pulse Commerce", "k": "E-commerce", "d": "Headless storefront with lightning-fast checkout.", "s": ["Next.js", "Stripe"] },
-  { "t": "Echo AI", "k": "AI · Tooling", "d": "Assistant that summarises meetings into action items.", "s": ["Python", "LLMs"] },
-  { "t": "Orbit UI", "k": "Open Source", "d": "Animated component library loved by developers.", "s": ["TypeScript", "Tailwind"] },
-  { "t": "Project Five", "k": "Web App", "d": "Short one-line description of the project goes here.", "s": ["React", "API"] },
-  { "t": "Project Six", "k": "Mobile", "d": "Short one-line description of the project goes here.", "s": ["Flutter", "Firebase"] },
-  { "t": "Project Seven", "k": "Web App", "d": "Short one-line description of the project goes here.", "s": ["Vue", "Node"] },
-  { "t": "Project Eight", "k": "AI · Tooling", "d": "Short one-line description of the project goes here.", "s": ["Python", "FastAPI"] },
-  { "t": "Project Nine", "k": "Open Source", "d": "Short one-line description of the project goes here.", "s": ["TypeScript", "CLI"] },
-  { "t": "Project Ten", "k": "E-commerce", "d": "Short one-line description of the project goes here.", "s": ["Next.js", "Stripe"] },
-  { "t": "Project Eleven", "k": "Web App", "d": "Short one-line description of the project goes here.", "s": ["React", "Django"] },
-  { "t": "Project Twelve", "k": "Mobile", "d": "Short one-line description of the project goes here.", "s": ["React Native"] },
-  { "t": "Project Thirteen", "k": "SaaS · Analytics", "d": "Short one-line description of the project goes here.", "s": ["React", "D3"] },
-  { "t": "Project Fourteen", "k": "AI · Tooling", "d": "Short one-line description of the project goes here.", "s": ["Python", "LangChain"] },
-  { "t": "Project Fifteen", "k": "Web App", "d": "Short one-line description of the project goes here.", "s": ["Svelte", "Go"] },
-  { "t": "Project Sixteen", "k": "Open Source", "d": "Short one-line description of the project goes here.", "s": ["Rust", "WASM"] },
-  { "t": "Project Seventeen", "k": "E-commerce", "d": "Short one-line description of the project goes here.", "s": ["Shopify", "React"] },
-  { "t": "Project Eighteen", "k": "Web App", "d": "Short one-line description of the project goes here.", "s": ["Angular", "Firebase"] },
-  { "t": "Project Nineteen", "k": "Mobile", "d": "Short one-line description of the project goes here.", "s": ["Kotlin", "Android"] },
-  { "t": "Project Twenty", "k": "SaaS · Analytics", "d": "Short one-line description of the project goes here.", "s": ["React", "GraphQL"] },
-  { "t": "Project Twenty One", "k": "AI · Tooling", "d": "Short one-line description of the project goes here.", "s": ["Python", "PyTorch"] },
-  { "t": "Project Twenty Two", "k": "Open Source", "d": "Short one-line description of the project goes here.", "s": ["TypeScript", "Vite"] }
+  {
+    "t": "WAREED Platform",
+    "k": "Healthcare · Education",
+    "d": "Mission-critical healthcare training and education platform engineered for government entities (Al Sahab, KSA). Features microservices architecture, RabbitMQ messaging, distributed caching, and automated CI/CD pipelines.",
+    "s": [".NET 9", "Angular", "RabbitMQ", "Redis", "Microservices", "DevOps"]
+  },
+  {
+    "t": "Smart Traffic Corridor",
+    "k": "IoT · Emergency Response",
+    "d": "IoT-driven intelligent traffic signal control system for Saudi Red Crescent (SRCA). Integrates real-time CAD ambulance telemetry to trigger automated green corridors, cutting emergency response times drastically.",
+    "s": [".NET 8", "IoT", "Windows Services", "Angular", "SQL Server", "Signal Control"]
+  },
+  {
+    "t": "Enterprise AVL Fleet System",
+    "k": "GovTech · Telematics",
+    "d": "High-scale multi-client GPS vehicle tracking system deployed for Saudi Red Crescent (SRCA), Ministry of Commerce, and Ministry of Health. Processes continuous location feeds across large government vehicle fleets.",
+    "s": [".NET 8", "Windows Services", "Angular", "Oracle Cloud", "SQL Server"]
+  },
+  {
+    "t": "Sea Roster",
+    "k": "Maritime · Logistics",
+    "d": "Cruise employee scheduling and maritime compliance reporting platform for MariApps Marine Solutions. Built using Ocelot API Gateway, repository-pattern microservices, and mobile-backed Web APIs.",
+    "s": [".NET 6", "Web API", "Microservices", "Ocelot", "Dapper ORM"]
+  },
+  {
+    "t": "TAQFI Tracking Platform",
+    "k": "IoT · Telematics",
+    "d": "High-throughput telematics platform with specialized Windows Services processing high-frequency IoT hardware sensor packets, device protocols, and vehicle telemetry.",
+    "s": [".NET 8", "Microservices", "Angular", "Oracle Cloud", "SQL Server"]
+  },
+  {
+    "t": "Plexus Marine ERP",
+    "k": "Enterprise · Maritime",
+    "d": "Enterprise maritime resource planning suite migrated from legacy ASPx WebForms to high-performance .NET Blazor Server with DevExpress Blazor components.",
+    "s": ["Blazor Server", ".NET 5/6", "DevExpress", "SQL Server", "Bootstrap 5"]
+  },
+  {
+    "t": "Plexus File Manager",
+    "k": "Enterprise · Blazor",
+    "d": "Custom Blazor file management engine extending the Plexus ERP system using DevExpress XAF/XPO, upgraded to .NET 6 with modular architecture.",
+    "s": [".NET 6", "C# 9", "Blazor Server", "DevExpress XAF/XPO"]
+  },
+  {
+    "t": "Data Simple QMS",
+    "k": "Pharma · Compliance",
+    "d": "Quality Assurance & regulatory management ERP engineered for pharmaceutical manufacturers, featuring stringent electronic batch records and audit logging.",
+    "s": [".NET 5", "C# 9", "React.js", "Web API Core", "SQL Server 2019"]
+  },
+  {
+    "t": "HAPis School ERP",
+    "k": "EdTech · Multi-platform",
+    "d": "Unified 12-module institutional management system spanning admissions, tuition fees, library, and student transport, complemented by 3 native Android applications.",
+    "s": [".NET Core 3.1", "Angular", "Android Native Java", "SQL Server"]
+  },
+  {
+    "t": "HoardingOnline Platform",
+    "k": "AdTech · Marketplace",
+    "d": "Outdoor advertising rental marketplace facilitating digital inventory booking, billboard campaign scheduling, and integrated payment gateway transactions.",
+    "s": ["C# 8", "Web API 2.0", "Angular 10", "SQL Server"]
+  },
+  {
+    "t": "CA Client Portal",
+    "k": "FinTech · Consultancy",
+    "d": "Client-consultant enrollment and advisory system streamlining document workflows and tax compliance for accounting professionals.",
+    "s": ["Web API Core 3.1", "Angular 10", "PostgreSQL", "C# 9"]
+  },
+  {
+    "t": "Dreams Vision ERP",
+    "k": "Internal · Enterprise",
+    "d": "18-module internal enterprise ERP connecting HR, outdoor media logistics, financial accounts, and marketing operations with embedded CefSharp desktop integration.",
+    "s": ["C# 7", "JavaScript", "SQL Server", "Android", "CefSharp"]
+  },
+  {
+    "t": "AS11 Gaming Tournament App",
+    "k": "Gaming · Real-time",
+    "d": "Real-time PvP eSports tournament hosting application featuring private match room coordination, bracket automation, and player registration.",
+    "s": ["C# 7", "ASP.NET Web Forms", "Android Native Java", "SQL Server"]
+  },
+  {
+    "t": "Media Vision Tax ERP",
+    "k": "GovTech · Compliance",
+    "d": "Comprehensive municipal advertising tax, outdoor media permissions, and regulatory invoicing system streamlining statutory approvals.",
+    "s": ["ASP.NET Web Forms", "C# 7", "SQL Server"]
+  },
+  {
+    "t": "PTPA Manufacturing Tracker",
+    "k": "Industrial · Automotive",
+    "d": "Plant-level production monitoring and throughput productivity analytics system deployed across Tier-1 automotive parts manufacturing facilities (Bajaj Auto / Metal Man).",
+    "s": ["C#", "ASP.NET Web Forms", "SQL Server", "Production Analytics"]
+  },
+  {
+    "t": "Varsa Colgate Production",
+    "k": "Industrial · FMCG",
+    "d": "Plant-level manufacturing tracking and supervisory reporting application monitoring high-speed industrial packaging and assembly lines.",
+    "s": ["C#", "ASP.NET Web Forms", "SQL Server", "Reporting"]
+  },
+  {
+    "t": "Garware Polyester BGM",
+    "k": "Manufacturing · ERP",
+    "d": "Specialized industrial system for analyzing B-grade inventory stocks, yield recovery, and automated raw material reuse recommendations.",
+    "s": ["C#", "ASP.NET Web Forms", "SQL Server"]
+  },
+  {
+    "t": "TMS Task Management System",
+    "k": "Workflow · Collaboration",
+    "d": "Enterprise task lifecycle tracking system incorporating milestone supervision, internal team messaging, and department SLA tracking.",
+    "s": ["C# 7", "ASP.NET Web Forms", "SQL Server"]
+  },
+  {
+    "t": "AMDS-V Alert Dispatch System",
+    "k": "Alerting · Telematics",
+    "d": "Machine alert dispatch and diagnostic system integrated with Windows Services and early hybrid mobile client applications for US industrial clients.",
+    "s": ["C#", "WCF", "Windows Services", "PhoneGap", "SQL Server"]
+  },
+  {
+    "t": "Garware Defect Recording (DRS)",
+    "k": "Quality Control · Industrial",
+    "d": "Quality control defect tracking and root-cause recording system deployed across industrial polymer production lines.",
+    "s": ["C#", "ASP.NET Web Forms", "SQL Server"]
+  }
 ]
