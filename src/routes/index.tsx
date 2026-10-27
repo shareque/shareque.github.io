@@ -419,7 +419,7 @@ function Index() {
               // 05 let's connect
             </p>
             <h2 className="reveal mt-6 -rotate-2 text-[14vw] font-semibold leading-[0.85] tracking-tighter md:text-[10rem]">
-              Let's <span className="font-serif italic text-signature">talk.</span>
+              Let's <span className="font-serif italic text-signature">connect.</span>
             </h2>
             <div className="mt-10 flex flex-wrap gap-4 md:ml-[30%]">
               <a
@@ -450,7 +450,7 @@ function Index() {
             <p className="mt-24 font-mono text-xs text-muted-foreground">
               © {new Date().getFullYear()}{" "}
               {PROFILE.fullName || `${PROFILE.firstName} ${PROFILE.lastName}`} — Technical Architect
-              &amp; Engineering Lead.
+              &amp; Team Lead.
             </p>
           </div>
         </section>
