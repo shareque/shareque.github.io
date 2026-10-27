@@ -11,13 +11,13 @@ export function DevAvatar({ x, y }: { x: number; y: number }) {
     <div className="relative h-[440px] w-[400px] select-none">
       <div className="spin-slow absolute inset-6 rounded-full border border-dashed border-primary/40" />
       <div className="bg-signature absolute inset-16 rounded-full opacity-25 blur-3xl" />
-      {[".NET", "Angular", "SQL", "AI"].map((t, i) => (
+      {[".NET", "Angular", "SQL", "AI", "Leadership"].map((t, i) => (
         <span
           key={t}
           className="glass float-slow absolute rounded-full px-3 py-1 font-mono text-xs text-primary"
           style={{
-            left: ["0%", "78%", "4%", "80%"][i],
-            top: ["18%", "12%", "70%", "66%"][i],
+            left: ["0%", "78%", "4%", "80%", "42%"][i],
+            top: ["18%", "12%", "70%", "66%", "2%"][i],
             animationDelay: `${-i * 2}s`,
           }}
         >
