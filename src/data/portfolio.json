@@ -1,0 +1,28 @@
+{
+  "profile": {
+    "firstName": "Mirza",
+    "lastName": "Shareque",
+    "tagline": "Software engineer & creative developer crafting <primary>fast, elegant</primary> digital experiences.",
+    "available": "Available for work",
+    "email": "hello@example.com",
+    "resume": "/downloads/resume.pdf"
+  },
+  "skills": [
+    { "t": "Frontend Engineering", "d": "Pixel-perfect, accessible interfaces with buttery motion.", "n": "01" },
+    { "t": "Backend & APIs", "d": "Scalable services, clean data models and secure APIs.", "n": "02" },
+    { "t": "UI / UX Design", "d": "From wireframe to polished design systems.", "n": "03" },
+    { "t": "Cloud & DevOps", "d": "CI/CD, containers and reliable deployments.", "n": "04" }
+  ],
+  "tech": ["React", "TypeScript", "Next.js", "Node.js", "Tailwind", "PostgreSQL", "MongoDB", "Docker", "AWS", "Python", "GraphQL", "Figma", "Git", "Redis"],
+  "experience": [
+    { "y": "2024 — Now", "r": "Senior Software Engineer", "c": "Company Name", "d": "Leading frontend architecture and shipping features used by thousands daily." },
+    { "y": "2022 — 2024", "r": "Full Stack Developer", "c": "Company Name", "d": "Built end-to-end products, APIs and internal tools across the stack." },
+    { "y": "2021 — 2022", "r": "Frontend Developer", "c": "Company Name", "d": "Crafted responsive UIs and a reusable component library." }
+  ],
+  "social": [
+    { "n": "GitHub", "h": "https://github.com/" },
+    { "n": "LinkedIn", "h": "https://linkedin.com/" },
+    { "n": "X / Twitter", "h": "https://x.com/" },
+    { "n": "Email", "h": "mailto:hello@example.com" }
+  ]
+}
