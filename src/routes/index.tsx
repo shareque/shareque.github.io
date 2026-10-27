@@ -130,9 +130,10 @@ function Index() {
       </nav>
       <a
         href="#about"
-        className="bg-signature fixed right-5 top-5 z-50 grid h-12 w-12 place-items-center rounded-full font-serif text-xl italic text-primary-foreground"
+        className="fixed right-5 top-5 z-50 grid h-12 w-12 place-items-center rounded-2xl glass p-2 transition-transform hover:scale-105 hover:border-primary shadow-lg"
+        title="Mirza Shareque"
       >
-        M
+        <img src="/favicon.svg" alt="MS Logo" className="h-7 w-7" />
       </a>
 
       <main className="relative z-10">
@@ -142,13 +143,15 @@ function Index() {
           <div className="float-slow absolute -left-32 top-20 h-96 w-96 rounded-full bg-primary/20 blur-3xl" />
           <div className="float-slow absolute -right-20 bottom-10 h-[28rem] w-[28rem] rounded-full bg-accent/20 blur-3xl [animation-delay:-4s]" />
 
-          <h1 className="pointer-events-none relative z-20 pt-28 text-[clamp(4.5rem,14vw,12.5rem)] font-semibold leading-[0.85] tracking-tighter">
+          <h1 className="pointer-events-none relative z-20 pt-28 text-[clamp(4.8rem,16vw,15.5rem)] font-semibold leading-[0.82] tracking-tighter">
             <span className="rise block overflow-hidden pb-1">
-              <span style={par(-12)} className="inline-block">{PROFILE.firstName}</span>
+              <span style={par(-12)} className="inline-block">
+                {PROFILE.firstName}
+              </span>
             </span>
-            <span className="rise block overflow-hidden pl-[4vw] md:pl-[6vw] pr-8 pb-3">
+            <span className="rise block overflow-hidden pl-[6vw] md:pl-[10vw] pr-12 pb-4">
               <span
-                className="text-signature font-serif italic inline-block pr-6 pb-2 [animation-delay:.15s]"
+                className="text-signature font-serif italic inline-block pr-8 pb-2 [animation-delay:.15s]"
                 style={par(12)}
               >
                 {PROFILE.lastName}
@@ -156,7 +159,10 @@ function Index() {
             </span>
           </h1>
 
-          <div className="absolute right-[6%] top-[14%] z-10 hidden lg:block" style={par(-20)}>
+          <div
+            className="absolute right-[4%] lg:right-[6%] xl:right-[10%] 2xl:right-[15%] top-[12%] z-10 hidden lg:block"
+            style={par(-20)}
+          >
             <DevAvatar x={pos.x} y={pos.y} />
           </div>
 
