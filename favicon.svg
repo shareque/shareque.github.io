@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1527"/>
+      <stop offset="50%" stop-color="#070c18"/>
+      <stop offset="100%" stop-color="#03060c"/>
+    </linearGradient>
+
+    <!-- Cyan to Teal Accent Gradient -->
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+
+    <!-- Gold to Amber Accent Gradient -->
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <!-- Subtle Drop Shadow -->
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Squircle Base with Metallic Gradient Border -->
+  <rect x="20" y="20" width="472" height="472" rx="116" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="8" filter="url(#subtleShadow)"/>
+
+  <!-- Radial Tech Aura -->
+  <circle cx="256" cy="256" r="170" fill="#38bdf8" opacity="0.06"/>
+  <circle cx="256" cy="256" r="120" fill="#fbbf24" opacity="0.04"/>
+
+  <!-- Corner Tech Guide Dots -->
+  <circle cx="84" cy="84" r="5" fill="#38bdf8" opacity="0.6"/>
+  <circle cx="428" cy="84" r="5" fill="#fbbf24" opacity="0.6"/>
+  <circle cx="84" cy="428" r="5" fill="#38bdf8" opacity="0.4"/>
+  <circle cx="428" cy="428" r="5" fill="#fbbf24" opacity="0.4"/>
+
+  <!-- Top Architect Nexus Diamond -->
+  <polygon points="256,92 270,108 256,124 242,108" fill="url(#amberGrad)"/>
+
+  <!-- Monogram MS -->
+  <g id="monogram">
+    <!-- M Pillar - Left -->
+    <path d="M 126 366 L 126 160 C 126 150 134 142 144 142 L 166 142 C 176 142 184 148 188 156 L 256 276 L 324 156 C 328 148 336 142 346 142 L 368 142 C 378 142 386 150 386 160 L 386 366 C 386 374 380 380 372 380 L 342 380 C 334 380 328 374 328 366 L 328 238 L 274 332 C 270 340 262 344 256 344 C 250 344 242 340 238 332 L 184 238 L 184 366 C 184 374 178 380 170 380 L 140 380 C 132 380 126 374 126 366 Z" fill="url(#cyanGrad)"/>
+
+    <!-- Interlocking S Curve with Glow -->
+    <path d="M 326 196 C 314 178 290 168 260 168 C 220 168 198 190 198 220 C 198 262 292 264 292 308 C 292 334 270 348 244 348 C 218 348 196 332 188 322 L 168 348 C 184 368 214 380 246 380 C 296 380 330 354 330 306 C 330 258 234 254 234 220 C 234 200 248 194 262 194 C 282 194 300 204 310 216 Z" fill="url(#amberGrad)" opacity="0.95"/>
+  </g>
+
+  <!-- Code / Architecture Bracket Accents -->
+  <path d="M 96 230 L 76 256 L 96 282" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.7"/>
+  <path d="M 416 230 L 436 256 L 416 282" stroke="#fbbf24" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.7"/>
+</svg>
