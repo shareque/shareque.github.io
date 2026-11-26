@@ -58,13 +58,13 @@
   "experience": [
     {
       "y": "Jan 2024 — Jun 2026",
-      "r": "Senior Full Stack Developer / Technical Lead",
+      "r": ".Net Developer / Senior Full Stack Developer / Technical Lead",
       "c": "Applligent Technologies Private Limited",
       "d": "Led end-to-end delivery of enterprise solutions for Saudi government entities (SRCA, Ministry of Commerce, MoH) and flagship platforms WAREED & TAQFI. Architected IoT smart traffic signal system with real-time emergency ambulance tracking to trigger automated green corridors. Engineered high-concurrency .NET Core microservices with RabbitMQ, Redis, and multi-database backends."
     },
     {
       "y": "Nov 2022 — Dec 2023",
-      "r": "Senior Full Stack Developer / Technical Lead",
+      "r": ".Net Developer / Senior Full Stack Developer / Technical Lead",
       "c": "EduSuite Solutions Private Limited",
       "d": "Engineered high-concurrency microservices in .NET Core utilizing RabbitMQ, Redis, Saga pattern, and multi-database architectures (SQL Server, Oracle Cloud). Managed multi-environment zero-downtime releases and led Agile/Scrum sprint planning and QA coordination."
     },
