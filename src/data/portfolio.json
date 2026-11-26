@@ -59,25 +59,25 @@
     {
       "y": "Jan 2024 — Jun 2026",
       "r": "Senior Full Stack Developer / Technical Lead",
-      "c": "Applligent Technologies (Client: Al Sahab National, Riyadh, KSA)",
+      "c": "Applligent Technologies Private Limited",
       "d": "Led end-to-end delivery of enterprise solutions for Saudi government entities (SRCA, Ministry of Commerce, MoH) and flagship platforms WAREED & TAQFI. Architected IoT smart traffic signal system with real-time emergency ambulance tracking to trigger automated green corridors. Engineered high-concurrency .NET Core microservices with RabbitMQ, Redis, and multi-database backends."
     },
     {
       "y": "Nov 2022 — Dec 2023",
       "r": "Senior Full Stack Developer / Technical Lead",
-      "c": "EduSuite Solutions (Client: Al Sahab National, Riyadh, KSA)",
+      "c": "EduSuite Solutions Private Limited",
       "d": "Engineered high-concurrency microservices in .NET Core utilizing RabbitMQ, Redis, Saga pattern, and multi-database architectures (SQL Server, Oracle Cloud). Managed multi-environment zero-downtime releases and led Agile/Scrum sprint planning and QA coordination."
     },
     {
       "y": "Dec 2022 — Mar 2025",
-      "r": ".NET Consultant (C2H)",
-      "c": "EffiaSoft (Client: MariApps Marine Solutions)",
+      "r": ".NET Consultant (Part Time)",
+      "c": "EffiaSoft Private Limited",
       "d": "Directed backend architecture and delivery for cruise-industry enterprise products including SeaRoster, JB Cruise, and Plexus Blazor app using .NET Web APIs, React.js, Blazor, and Dapper ORM. Mentored and guided engineers in enterprise design patterns."
     },
     {
       "y": "Mar 2021 — Dec 2022",
       "r": "Technical Architect",
-      "c": "Redbytes Software (Clients: Infionic Inc & EffiaSoft)",
+      "c": "Redbytes Software Private Limited",
       "d": "Led migration of enterprise applications from legacy .NET Framework 4.8 to .NET 5, redesigning core modules with Web API, React.js, and SQL Server 2019. Authored comprehensive target-state architecture diagrams, database designs, API specifications, and established DevOps continuous delivery standards."
     },
     {
